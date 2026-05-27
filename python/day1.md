@@ -1,6 +1,8 @@
 # DAY 1
 Important python basics.
 
+***
+
 ## 1.String 
 ### String reverse:
 Reverses the string.
@@ -21,6 +23,7 @@ Ex, List,set,array,...
 name = "cybersecurity"
 name[-1]
 ```
+***
 
 ## 2.List
 List is a collection of data.
@@ -36,6 +39,7 @@ Delete from the list.
 ports = [631,53,22,20]
 ports.remove(20)
 ```
+***
 
 ## 3.Dictionary
 Dictionary is set of key, value pairs.
@@ -75,6 +79,8 @@ services.get(21)
 ```
 This returns value at key 21 in services dictionary.
 
+***
+
 ## 4.Files
 ### Read:
 Read from the file.
@@ -94,6 +100,8 @@ Write to the file, keeping the contents of the file.
 with open("notes.txt","a") as f:
   f.write("\nhi")
 ```
+***
+
 ## 5. Functions
 Reusable block again and again.
 ### Simple Function:
@@ -107,6 +115,8 @@ def greet(name):
 def square(num):
     return num * num
 ```
+***
+
 ## 6.Exception handling
 If an error occurs it can be handled by try and except blocks, try catches the error and executes except block, if no error except block is unused.
 ### try-except:
