@@ -137,6 +137,8 @@ vim file.txt
 ```
 `Vim` is a text editor similar to vs code it has its own different language.
 
+***
+
 ## 9. cat, less, head and tail
 ```bash
 cat notes.txt
@@ -176,6 +178,8 @@ It returns the last 5 rows of the file.
 echo "hello nakama"
 ```
 It prints the `hello nakama` to the terminal.
+
+***
 
 ## 11. whoami
 ```bash
