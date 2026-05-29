@@ -1,4 +1,4 @@
-# module-1 : Start Your Cybersecurity Journey
+# Module-1 : Start Your Cybersecurity Journey
 
 ## Room-2 : Defensive Security Intro
 
