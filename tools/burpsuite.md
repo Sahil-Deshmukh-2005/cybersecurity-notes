@@ -2,7 +2,7 @@
 
 Burp suite is a web security testing tool.  
 
-Visualise it like this:  
+#### Visualise it like this:  
 
 ```bash
 Browser ➡️ Burp Suite ➡️ Internet
@@ -42,7 +42,7 @@ User-Agent: Mozilla/5.0
 Accept: text/html
 ```
 Here,  
-GET = HTTP Method, meaning to fetch the data
+GET = HTTP Method, meaning to fetch the data  
 / = homepage
 
 ***
