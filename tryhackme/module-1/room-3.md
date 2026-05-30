@@ -42,3 +42,6 @@ Everything is done under an agreement between the company and the tester. This p
 *️Analyzing the results and creating repoerts, and advising an organization on how to prevent the attack from occuring.
 ```
 
+
+### Commands 
+` There are no commands in this room.`
