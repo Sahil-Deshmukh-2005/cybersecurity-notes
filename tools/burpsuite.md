@@ -1,5 +1,5 @@
 # Burp Suite
-.
+
 Burp suite is a web security testing tool.  
 
 #### Visualise it like this:  
