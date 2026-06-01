@@ -5,7 +5,7 @@ Networks are simply things connected.
 Specifically in computing when 2 or more devices are connected it is called `network`.  
 
 ***
-.
+
 ## Internet
 Internet is made up of many small such networks. These small networks are called `private networks`, where they are being connected,`internet`, is called `private networks`.  
 Evolution:  
