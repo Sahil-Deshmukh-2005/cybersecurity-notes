@@ -7,7 +7,7 @@ This repository contains my learning notes for:
 - TryHackMe
 - Security tools
 - Cybersecurity fundamentals
-
+.
 ## Goals
 - Build strong cybersecurity fundamentals
 - Document practical learning
