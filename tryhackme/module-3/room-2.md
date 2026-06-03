@@ -1,4 +1,4 @@
-# Module-3 : How the Web Works.
+# Module-3 : How the Web Works
 
 ## Room-2 : HTTP in Details
 
