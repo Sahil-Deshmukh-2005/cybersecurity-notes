@@ -588,8 +588,38 @@ f - Specify file name
 v - Verbose (show files)
 J - xz Compression
 ```
+***
+
+## 30. kill AND pkill AND killall
+Used to terminate the processes using their PID (Process ID)  
+```bash
+kill <PID>
+```
+Terminated the process.  
+
+```bash
+kill -9 <PID>
+```
+Immediate termination.  
+
+```bash
+pkill <PName>
+```
+Kills all the processes with Process name = PName.  
+Ex, pkill chrome  
+```bash
+pkill -9 <PName>
+```
+Force Kill.  
+❗But keep in mind that pkill matches the process name partially that means it can easily kill some other processes too.  
+
+```bash
+killall <PName>
+```
+This is safer than `pkill`, it exactly matches the name and then only kills the process.  
 
 ***
+
 ### This is the END of basic commands, these are not all of them, but very useful in day-to-day life.  
 ### There are still some networking commands that well cover in networking.  
 
