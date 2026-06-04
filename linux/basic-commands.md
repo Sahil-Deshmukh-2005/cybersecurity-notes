@@ -332,8 +332,9 @@ Recursively remove by force from Projects directory.
 ## 17. sudo = Superuser do
 I never thought this would be the expansion of abbreviation `sudo`.  
 
-`sudo` is used to remove the permissions from a file/directory. It lets the user use the file/directory or execute it normally.  
-
+`sudo` is used to remove the permissions from a file/directory. It lets the user use the file/directory or execute it normally.   
+This gives administrator rights to the user.  
+   
 ```bash
 sudo ls /root
 ```
@@ -409,15 +410,188 @@ This updates the database.
 
 *** 
 
+## 21. grep
+Used to search particular word/line in a file.  
+ ```bash
+grep "Alex" text.txt
+```
+This returns the lines with word Alex
 
+```bash
+grep -n "Alex" text.txt
+```
+This returns the output with order number.  
 
+```bash
+grep -i "alex" text.txt
+```
+This is case insensitive form.  
 
+```bash
+grep -r "error" Logs
+```
+This performs resursive search over the entire Directory.  
 
+***
 
+## 22. df -h AND du -sh
+Simply means,  
+```
+df = Disk Free
+du = Disk Usage
+```
 
+here   
+```
+-h = human readable, if you dont put h itll show size in kb
+-s = summarize
+```
+Commands:
+```bash
+df -h
+```
+  
+```bash
+du -sh
+```
+***
 
+## 23. top
+This gives us realtime analysis of running processes.  
+top - Table of Processes
 
+```bash
+top
+```
+This has a better interface version called, htop, goof for human readability.  
+First install htop.  
+```bash
+sudo apt intall htop
+```
+```bash
+htop
+```
 
+Q - Quit
+
+***
+
+## 24. ps aux
+This is the snapshot of all the processes running currently.  
+ps - process status
+a - of all users
+u - detailed user oriented format
+x - process without terminal too (background)
+
+```bash
+ps aux
+```
+If you want processes of particular user
+
+```bash
+ps -u Alex
+```
+
+***
+
+## 25. sudo apt
+Last time we saw what sudo does, using it now we can manipulate packages.  
+apt - Advanced Package Tools
+
+```bash
+sudo apt update
+sudo apt upgrade
+sudo apt install htop
+sudo apt remove htop
+sudo apt autoremove
+```
+
+***
+
+## 26. man AND --help 
+man - mannual  
+Both does the same job.  
+  
+```bash
+man ls
+```
+```bash
+ls --help
+```
+This gives the mannual of ls command.  
+
+Q - Quit
+
+*** 
+
+## 27. alias
+Rename the commands as you want.  
+Temporarily stored for current session once you shutdown the device it resets.  
+
+```bash
+alias ll="ls -l"
+ll
+```
+
+Now you can use `ll` to run `ls -l`.  
+
+```bash
+alias
+```
+Shows all the renamed commands.  
+
+```bash
+unalias ll
+```
+Removes the alias `ll` for the command.  
+
+***
+
+## 28. wget
+```bash
+wget <URL>
+```
+Download using URL
+
+```bash
+wget https://files.example.com/manual.pdf
+```
+Downloads manual.pdf  
+
+```bash
+wget -O notes.pdf https://files.example.com/manual.pdf
+```
+Renames while downloading.  
+
+```bash
+wget -b https://files.example.com/manual.pdf
+```
+Used to download in background.  
+
+***
+
+## 29. tar
+Consider it as zip.  
+
+```bash
+tar -czf backup.tar.gz Projects
+tar -xzf backup.tar.gz
+tar -tf backup.tar.gz
+```
+
+```
+c - Create
+x - Extract
+t - List Contents
+z - Use gzip Compression
+f - Specify file name
+v - Verbose (show files)
+J - xz Compression
+```
+
+***
+### This is the END of basic commands, these are not all of them, but very useful in day-to-day life.  
+### There are still some networking commands that well cover in networking.  
 
 
 
