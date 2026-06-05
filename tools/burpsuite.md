@@ -67,4 +67,32 @@ Status code are numerical values that states the condition of request.
 400 - 499 ➡️ Client error
 500 - 599 ➡️ Server error
 ```
+***
+
+## Repeater
+A repeaters job is to send the same HTTP request again and again manually.  
+While modifying parts of it to observe how the server responds.  
+So we dont have to use the browser UI again and again.  
+Ex,  
+GET /profile?id=5 HTTP/1.1
+Host: example.com  
+  
+change id=5 ----> id=6  
+and observe the response.  
+### What things you can test:
+1) parameters  
+   ?id=5  
+2) Headers  
+   User-Agent  
+   Cookie  
+   Authorisation  
+3) Request Method  
+   GET ----> POST  
+4) Body Data  
+   JSON/forms/etc..  
+
+***
+
+## Request and Response Structure
+We did this in tryhackme Module-3, room-2 : HTTP in Details  
 
