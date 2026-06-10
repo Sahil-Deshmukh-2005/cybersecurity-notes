@@ -8,7 +8,17 @@ Nmap is a network scanning tool.
 
 ## TCP vs UDP
 Why this is important because `nmap` uses `TCP` scans or `UDP` scans.  
-### TCP = 
+We will cover about this in depth in `networking`.  
+  
+### TCP = Tranmission Control Protocol
+This protocol is used when you want relaiable connection.  
+`TCP` first makes the connection with the reciever before sending data, this is called 3-way handshake.  
+Due to this its slow, as it first has to make connection, but it ensures the data reaches the reciever.  
+  
+### UDP = User Datagram Protocol
+This protocol is used when you want lower `Latency`.  
+`UDP` directly starts throwing packet at the reciever no matter if the reciever catches it, packet may get lost while transferring and client wouldnt even know that.  
+Faster than `TCP` as it does not care abot connection.  
 
 ***
 
@@ -82,7 +92,9 @@ Its usefull because versions may contain vulnerabilities.
 ```bash
 nmap -sn <Subnet Addr>
 ```
+`-sn` means Ping Scan.  
 This finds all the live devices on the particular subnet.  
+This does not perform port scanning.  
 You can check your IP address/Subnet by,
 ```bash
 ip a
@@ -166,6 +178,69 @@ Scans All the ports.
 ❕Important 
 There are 0-65535 i.e. 65536 ports available in total.
 ```
+
+***
+
+## States
+```
+open -----> Listening
+close -----> Reachable but unused
+filtered -----> Firewalls/ security filtering
+```
+
+***
+
+## UDP Scan
+As we saw normal `nmap` without flags is a basic `TCP` scan.  
+Now lets see for `UDP` scan,  
+```bash
+sudo nmap -sU scanme.nmap.org
+```
+Why `sudo`, because `-sU` flag requires root privileges.  
+⚠️ Its too slow, you can run the command go make some food, eat it, wash the dishes, then come back and itd still be running.  
+
+***
+
+## Scan Multiple Targets
+```bash
+nmap <ip_addr_1> <ip_addr_2> .....
+```
+You can put as many as you want.  
+Ex,  
+```bash
+nmap 192.168.1.1 192.168.1.5
+```
+
+***
+
+## Scan ranges of IP
+```bash
+nmap 192.168.1.1-20
+```
+This scans IP from `.1` to `.20`.  
+
+***
+
+## Multiple Flags
+You can use multiple flags(-sn, -v, -T3, -p, etc...) at once.  
+```bash
+nmap -T4 -p 22,80,443 scanme.nmap.org
+```
+Scans specific ports faster.  
+
+***
+
+## Latency
+```
+`Latency means Response time ⏲️.
+```
+Output 
+```
+Host is up (0.0031s latency).
+```
+This means Response took 3.2ms.  
+
+***
 
 
 
