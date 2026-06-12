@@ -1,5 +1,5 @@
-# DAY 1
-Important python basics.
+# ToDo CLI
+Important python for ToDo CLI
 
 ***
 
