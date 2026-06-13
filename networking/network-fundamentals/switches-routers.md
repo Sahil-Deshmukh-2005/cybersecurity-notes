@@ -1,7 +1,7 @@
 ***
 
 # Switches 
-Switches are like connectors, which connects multiple devices with each other and where they are connected i.e. ports.  
+Switches are like connectors, which keeps the data about connected multiple devices and where they are connected i.e. ports.  
 
 ```
     frame
