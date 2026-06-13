@@ -9,8 +9,8 @@ IP = Internet Protocol
 
 Application ----> Transport ----> Internet ----> Data Link  
 
-Application equivalent ----> OSI 7,6,5
-Transport equivalent ----> OSI 4
-Internet equivalent ----> OSI 3
-Data Link ----> OSI 2,1
+Application equivalent ----> OSI 7,6,5  
+Transport equivalent ----> OSI 4  
+Internet equivalent ----> OSI 3  
+Data Link ----> OSI 2,1  
 
