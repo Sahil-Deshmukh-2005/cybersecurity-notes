@@ -37,6 +37,47 @@ Command :
 ```bash
 nslookup www.google.com
 ```
+
 This will show the IP address.  
+
+***
+
+## HTTP/ FTP/ SMTP/ Telnet and SSH/ RDP 
+  
+HTTP = Hypertext Transfer Protocol  
+FTP = File Transfer Protocol  
+SMTP = Simple Mail Transfer Protocol  
+SSH = Secure Shell  
+RDP = Remote Desktop Protocol  
+  
+All these protocols are for to transfer data across the internet.  
+
+### HTTP 
+We have learnt it already.  
+
+### FTP 
+Same as its name its used to transfer files.  
+There 2 channels between client and server.  
+1) Control Channel : Used for sending commands, responses, and other control information via TCP port 21.
+2) Data Channel : Actual data is transferred via this channel.
+
+### SMTP 
+Used for mail transfer.  
+  
+Uses TCP port 25.  
+But this is not secure, thats why we use,  
+  
+SMTPS = SMTP Secure, It uses TCP port 465 with SSL/TLS encryption.  
+
+### Telnet and SSH 
+Both are used for Remote Access Control (RAC),  
+where one can use others device without physically being there. (Uses terminal securely)  
+But Telnet is not so secure as it does not use encryption for login credentials. Therefore, we use SSH it is secure and uses encryption.  
+
+### RDP
+Same as Telnet and SSH.  
+It gives access and control over other devices GUI.  
+It uses TCP port 3389, But it can be changes for security purpose.  
+RDP supports encryption.  
 
 ***
