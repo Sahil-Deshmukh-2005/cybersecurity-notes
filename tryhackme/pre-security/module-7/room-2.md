@@ -34,8 +34,8 @@ Ciphertext + Decryption Algorithm + Key = Plaintext
 3) The key stays secret from everyone else.
 
 #### Ceaser Cipher
-- The Ceaser Cipher is an example of symmeteric encryption.
-- Ceaser Cipher is, doing an offset by a particular number called key.
+- The `Ceaser Cipher` is an example of symmeteric encryption.
+- `Ceaser Cipher` is, doing an offset by a particular number called key.
   ```
   HELLO ----> KHOOR
   offset = 3
