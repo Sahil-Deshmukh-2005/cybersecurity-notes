@@ -52,3 +52,40 @@ Send as `Ciphertext`, then that `Ciphertext` would need a key, how to send that,
 This is called the `Key Distribution Problem`.  
 
 ***
+
+### Asymmetric Encryption
+To solve the problem with symmetric encryption we use `Asymmetric Encryption`.  
+
+#### Two keys instead of one
+Asymmetric encryption uses two mathematically linked keys:  
+1) A public key, that everyone can know and use.
+2) A private key, that only one person knows and is kept secret.
+
+Here is a clever part:
+- If you encrypt something with someone's public key, only their private key can decrypt it.
+- If you encrypt something with your private key, anyone with your public kay can decrypt it.
+
+
+#### Benefits
+Solves the problem of key sharing.  
+
+#### Disadvantage
+1) Slow.  
+2) Used for small amount of data.
+
+***
+
+### Hybrid Approach
+This is used everywhere nowadays.  
+```
+-----> Symmetric Encryption + Asymmetric Encryption
+```
+
+How?  
+1) Asymmetric Encryption:  
+It is used so the sender uses the public key to encrypt the secret key and sends it to the person, then the person decrypts it using private key and gets the secret key.
+  
+3) Symmetric Encryption:  
+Now as the key is sent to both sender and receiver they can use `Symmetric Encryption` solving `The Key Distribution Problem`.
+
+***
