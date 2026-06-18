@@ -22,7 +22,8 @@ ex., Different regions, globally, etc...
 
 1) Public WAN :-
 A public infrastructure that uses public services for communication, such as the `Internet`.
-2) Private WAN :-
+  
+3) Private WAN :-
 Uses dedicated connections between geographically dispersed sites.
 
 ***
