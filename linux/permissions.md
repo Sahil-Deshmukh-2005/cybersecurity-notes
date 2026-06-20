@@ -1,8 +1,12 @@
 # Permissions Settings
 
+***
+
 r - Read - 4  
 w - Write - 2  
 x - Execute - 1  
+
+***
 
 ## There are three types of users   
 1) Owner  
@@ -16,6 +20,8 @@ rw- = Groups
 r-- = Others
 ```
 Group of 3.  
+
+***
 
 ## Numeric Permissions and chmod 
 ```
@@ -32,6 +38,9 @@ We add these to give permissions to different types of users.
 chmod 755 notes.txt ----> -rwxr-xr-x
 chmod 777 notes.txt ----> -rwxrwxrwx
 ```
+
+***
+
 ## Ownership and Groups
 ### chgrp
 ```
@@ -54,6 +63,8 @@ chown alice script.py
 chown alice:devs script.py
 ```
 
+***
+
 ## ACLs (Access Control Lists)
 Special permissions.  
 ```bash
@@ -65,6 +76,8 @@ setfacl -m u:alex:rw reports.txt ----> -rw-r--r--+...
 getfacl report.txt
 ```
 
+***
+
 ## How Linux Evaluates Permissions?
 ```
 Accessing File/Directory?
@@ -74,3 +87,6 @@ Accessing File/Directory?
       ↪️ Maths ACL group? ---> ACL group Permissions
       ↪️ Others? ---> Others Permissions
 ```
+
+***
+
