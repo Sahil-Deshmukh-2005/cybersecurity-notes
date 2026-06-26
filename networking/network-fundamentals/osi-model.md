@@ -1,4 +1,7 @@
 # OSI Model 
+
+***
+
 This is a theoretical model.  
 How data travels from one computer to another.  
 layer 7 ----> layer 1 = sending   
@@ -52,3 +55,5 @@ Layer 3 : IP routing devide path.
 Layer 2 : MAC addressing used locally.
 Layer 1 : Electrical/WiFi signals transmitted.
 ```
+
+***
