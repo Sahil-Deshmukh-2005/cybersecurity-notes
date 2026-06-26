@@ -1,5 +1,7 @@
 # TCP/IP Protocol 
 
+***
+
 This is the practical internet model.  
 
 It has 4 layers and includes many protocols.  
@@ -14,3 +16,4 @@ Transport equivalent ----> OSI 4
 Internet equivalent ----> OSI 3  
 Data Link ----> OSI 2,1  
 
+***
