@@ -41,3 +41,39 @@ Ex., HTTP, FTP, DNS, POP3, SMTP, IMAP
 - 192.168.0.0 - 192.168.255.255 = (192.168.0.0/16)  
 
 ***
+
+### Encapsulation 
+Every layer in TCP/IP protocol attacks their own header and sometimes trailer to the packet. This process is called `Encapsulation`.  
+```
+                       |------------------|
+Application Layer ---> | Application Data |
+                       |------------------|
+
+
+                     |---------------|------------------|
+Transport Layer ---> | TCP/IP Header | Application Data |
+                     |---------------|------------------|
+
+
+                   |-----------|---------------|------------------|
+Network Layer ---> | IP Header | TCP/IP Header | Application Data |
+                   |-----------|---------------|------------------|
+
+
+                     |----------------------|-----------|---------------|------------------|----------------------|   }
+Data-Link Layer ---> | Ethernet/WiFi Header | IP Header | TCP/IP Header | Application Data | Ethernet/WiFi Header |     } Frame
+                     |----------------------|-----------|---------------|------------------|----------------------|   }
+
+UDP Used = UDP Datagram
+TCP Used = TCP Segment
+
+```
+
+***
+
+
+
+
+
+
+
