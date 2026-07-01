@@ -1,3 +1,3 @@
 # Important
 
-Important things I learn while coding for projects 
+Important things I learnt while coding for projects 
