@@ -232,7 +232,7 @@ Scans specific ports faster.
 
 ## Latency
 ```
-`Latency means Response time ⏲️.
+Latency means Response time ⏲️.
 ```
 Output 
 ```
