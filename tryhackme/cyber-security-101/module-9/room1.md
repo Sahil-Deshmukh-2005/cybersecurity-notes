@@ -22,7 +22,7 @@ Its a brute force online password cracking program, a quick system login passwor
 3. For web :  
 `sudo hydra <username> -P <wordlist> MACHINE_IP http-post-form "<path>:<login_credentials>:<invalid_response>"`  
 - http-post-form : The type of the form is POST  
-- `<path>' : The login page URL, Ex, login.php  
+- `<path>` : The login page URL, Ex, login.php  
 - <login_credentials> : The username and password used to log in, Ex, username=^USER^&password=^PASS^  
 - <invalid_response> : Part of the response when the login fails  
   
