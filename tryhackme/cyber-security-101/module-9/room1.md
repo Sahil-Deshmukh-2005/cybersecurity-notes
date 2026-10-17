@@ -21,17 +21,17 @@ Its a brute force online password cracking program, a quick system login passwor
   
 3. For web :  
 `sudo hydra <username> -P <wordlist> MACHINE_IP http-post-form "<path>:<login_credentials>:<invalid_response>"`  
-http-post-form : The type of the form is POST  
-`<path>` : The login page URL, Ex, login.php  
-<login_credentials> : The username and password used to log in, Ex, username=^USER^&password=^PASS^  
-<invalid_response> : Part of the response when the login fails  
+- http-post-form : The type of the form is POST  
+- `<path>' : The login page URL, Ex, login.php  
+- <login_credentials> : The username and password used to log in, Ex, username=^USER^&password=^PASS^  
+- <invalid_response> : Part of the response when the login fails  
   
 Ex,  
 `hydra -l <username> -P <wordlist> MACHINE_IP http-post-form "/:username=^USER^&password=^PASS^:F=incorrect" -V`  
-/ = the main ip addr  
-the specified username will replace ^USER^  
-the password from the wordlist will replace ^PASS^  
-F=incorrect is a string that appears in server reply when the login fails.  
+- / = the main ip addr  
+- the specified username will replace ^USER^  
+- the password from the wordlist will replace ^PASS^  
+- F=incorrect is a string that appears in server reply when the login fails.  
   
 `-s <port>` can be used to specify the port number if the website is not using default port.  
 
